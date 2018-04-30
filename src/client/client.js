@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './components/Button';
+import { renderRoutes }  from 'react-router-config';
+import { BrowserRouter } from 'react-router-dom';
+import Routers from './Routes';
 
 ReactDOM.hydrate(
-    <div>
-        <h1>Hello</h1>
-        <Button />
-    </div>,
+    <BrowserRouter>
+        <div>{renderRoutes(Routers)}</div>
+    </BrowserRouter>,
     document.querySelector("#root")
 );
