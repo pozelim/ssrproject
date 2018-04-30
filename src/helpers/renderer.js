@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import Button from '../components/Button';
+import Button from '../client/components/Button';
 
 export default () => {
 const content = renderToString(
