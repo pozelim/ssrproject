@@ -6,13 +6,14 @@ class Button extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(event) {
-        alert("OK!");
+    handleClick(e) {
+        e.preventDefault();
+        console.log("OK!");
     }
 
     render() {
         return (
-            <button onCLick={this.handleCLick}>OK</button>
+            <button onClick={this.handleClick}>OK</button>
         );
     }
 };
