@@ -1,8 +1,15 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
+import Button from '../components/Button';
 
 export default () => {
-const content = renderToString(<h1>Hello</h1>);
+const content = renderToString(
+        <div>
+            <h1>Hello</h1>
+            <Button />
+        </div>
+
+    );
     return `
         <html>
             <header></header>
