@@ -7,7 +7,7 @@ const content = renderToString(<h1>Hello</h1>);
         <html>
             <header></header>
             <body>
-                <div id="content">
+                <div id="root">
                     ${content}
                 </div>
             </body>
